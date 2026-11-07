@@ -70,6 +70,9 @@ public class InputParserTest {
                     5 -1
                     """,
                     """
+                    5 A
+                    """,
+                    """
                     5 3
                     1 1 X
                     """,

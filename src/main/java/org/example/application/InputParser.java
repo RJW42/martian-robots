@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
-import java.util.stream.Stream;
 
 /**
  * Input parser for MartianRobots. Works over any buffered reader, e.g. file, or std-in.

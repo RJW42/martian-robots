@@ -9,7 +9,16 @@ public final class Definitions {
         NORTH,
         SOUTH,
         EAST,
-        WEST
+        WEST;
+
+        public char asChar()  {
+            return switch (this) {
+                case NORTH -> 'N';
+                case SOUTH -> 'S';
+                case EAST -> 'E';
+                case WEST -> 'W';
+            };
+        }
     }
 
     public enum Instruction {
