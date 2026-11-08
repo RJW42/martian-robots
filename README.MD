@@ -2,6 +2,7 @@
 # Java and Maven Version
 
 Java: 25LTS
+
 Maven: 3.8.7 (other versions may work)
 
 # Building & Running
