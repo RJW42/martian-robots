@@ -64,7 +64,7 @@ public class Main {
                     output.point().x(),
                     output.point().y(),
                     output.cardinal().asChar(),
-                    output.wasLost() ? " LOSS" : ""
+                    output.wasLost() ? " LOST" : ""
             );
         }
 

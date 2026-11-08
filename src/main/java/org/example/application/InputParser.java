@@ -131,8 +131,8 @@ public final class InputParser {
         final int x = parseInt(parts[0]);
         final int y = parseInt(parts[1]);
         throwIfFailsCheck(
-                x > 0 && y > 0,
-                () -> new InvalidInputException(Reason.INVALID_INPUT, "Expect robot start pos to be positive.")
+                x >= 0 && y >= 0,
+                () -> new InvalidInputException(Reason.INVALID_INPUT, "Expected robot start pos to be positive.")
         );
 
 

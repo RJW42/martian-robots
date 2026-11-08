@@ -25,6 +25,8 @@ public class InputParserTest {
                 RFL
                 3 2 N
                 FFF
+                0 0 W
+                LLL
                 """;
 
         // When
@@ -33,7 +35,7 @@ public class InputParserTest {
         // Expect
         assertEquals(5, input.width());
         assertEquals(3, input.height());
-        assertEquals(2, input.robotInstructions().size());
+        assertEquals(3, input.robotInstructions().size());
 
         final var i1 = input.robotInstructions().get(0);
         assertEquals(new Point(1, 1), i1.startPoint());
@@ -88,6 +90,9 @@ public class InputParserTest {
                     5 3
                     1 1 E
                     X
+                    """,
+                    """
+                    5 0
                     """
             }
     )
